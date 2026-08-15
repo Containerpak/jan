@@ -12,6 +12,10 @@ FROM ghcr.io/containerpak/gtk3:main
 
 LABEL org.opencontainers.image.source="https://github.com/Containerpak/jan"
 
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends libgles2 && \
+    cpak-clean-junk
+
 COPY --from=source /stage/ /opt/jan/
 COPY jan /usr/bin/jan
 COPY jan.desktop /usr/share/applications/jan.desktop
