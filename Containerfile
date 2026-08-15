@@ -13,7 +13,7 @@ FROM ghcr.io/containerpak/gtk3:main
 LABEL org.opencontainers.image.source="https://github.com/Containerpak/jan"
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends libgles2 libnspr4 libnss3 && \
+    apt-get install -y --no-install-recommends libgles2 libgomp1 libnspr4 libnss3 && \
     cpak-clean-junk
 
 COPY --from=source /stage/ /opt/jan/
