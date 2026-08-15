@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Jan
+Comment=Run a private AI assistant on local models.
+Exec=jan %U
+Icon=jan
+Terminal=false
+Categories=Utility;Development;
+
