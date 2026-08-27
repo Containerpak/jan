@@ -1,10 +1,10 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
-  "manifest_version": "2.0",
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v3.json",
+  "manifest_version": "3.0",
   "name": "Jan",
   "description": "Run a private AI assistant on local models.",
   "version": "0.8.4",
-  "image": "ghcr.io/containerpak/jan:main",
+  "image": "ghcr.io/containerpak/jan@sha256:a742e4793553bc9c32699afffcdc0235b7a0f0c6de63f82a78ab9aca35e91554",
   "binaries": [
     "/usr/bin/jan"
   ],
@@ -15,16 +15,11 @@
   "addons": [],
   "idle_time": 0,
   "override": {
-    "socketX11": true,
     "socketWayland": true,
     "socketPulseAudio": true,
-    "socketSessionBus": true,
-    "socketSystemBus": false,
     "socketSshAgent": false,
     "socketCups": false,
     "socketGpgAgent": false,
-    "socketAtSpiBus": true,
-    "socketBluetooth": false,
     "deviceDri": true,
     "deviceKvm": false,
     "deviceShm": true,
@@ -57,8 +52,6 @@
     "memoryMaxMB": 0,
     "cpuQuota": 0,
     "pidsMax": 0,
-    "asRoot": false,
-    "allowedHostCommands": []
+    "asRoot": false
   }
 }
-
