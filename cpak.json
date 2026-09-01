@@ -4,7 +4,7 @@
   "name": "Jan",
   "description": "Run a private AI assistant on local models.",
   "version": "0.8.4",
-  "image": "ghcr.io/containerpak/jan@sha256:1a0a8e311c384b69e238ebd5efce2b17e8976adc3f0b5b04f937e73cee910f29",
+  "image": "ghcr.io/containerpak/jan@sha256:a3a808613c9c39e3495104f4d719adcef0acabc92f22d5a3c39c9b8ccb0c2d10",
   "binaries": [
     "/usr/bin/jan"
   ],
